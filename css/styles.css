@@ -32,7 +32,14 @@ button {
 /* CLASS STYLES */
 
 .container-fluid {
-    padding: 3% 15%;
+    padding: 3% 15% 7%;
+}
+
+.cta-heading {
+    width: 65%;
+    color: white;
+    margin: auto;
+    font-size: 2.5rem;
 }
 
 .download-button {
@@ -69,6 +76,11 @@ button {
 .feature-row {
     width: 75%;
     margin: 5rem auto;
+}
+
+.footer-row {
+    width: 8%;
+    margin: 3% auto 1%;
 }
 
 .navbar {
@@ -121,16 +133,46 @@ button {
 
 .title-image {
     transform: rotate(25deg);
-    width: 60%;
+    width: 275px;
+    position: absolute;
+    right: 25%;
+}
+
+@media (max-width: 1028px) {
+
+    .title-image {
+        transform: rotate(0deg);
+        position: static;
+    }
+
+    #title {
+        background-color: #ff4c68;
+        text-align: center;
+    }
+    
 }
 
 /* ID STYLES */
+
+#cta {
+    text-align: center;
+    background-color: #ff4c68;
+    padding: 3% 20% 3%;
+}
 
 #title {
     background-color: #ff4c68;
 }
 
 #features {
+    text-align: center;
+    padding: 100px;
+    position: relative;
+    z-index: 1;
+    background-color: white;
+}
+
+#footer {
     text-align: center;
 }
 
